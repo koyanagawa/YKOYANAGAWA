@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA</title>
+  <link rel="stylesheet" href="file.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="file">
+    <section class="menu">
+      <li>
+        <ul id="home"> <img src="../pcimg/home.png" width="22"><p>HOME</p></ul>
+        <ul id="profile">  <img src="../pcimg/icon.png" width="22"><p>PROFILE</p></ul>
+      </li>
+    </section>
+    <section class="content">
+      <table>
+        <section id="content_home">
+          <iframe src="home.html" frameBorder="0" width="100%" height="600"></iframe>
+        </section>
+        <section id="content_profile">
+          <iframe src="profile.html" frameBorder="0" width="100%" height="600"></iframe>
+        </section>
+      </table>
+    </section>
+  </section>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    // 非表示
+    $('#content_profile').hide();
+    $("#home").click(function() {
+        $("#content_home").toggle();
+        $('#content_profile').hide();
+      });
+      // プロファイルのデータの表示
+      $("#profile").click(function() {
+        $("#content_profile").toggle();
+        $('#content_home').hide();
+      });
+  </script>
+  <!-- ボタン装飾 -->
+  <script>
+      $("#home").click(function() {
+      $("#home , #profile").removeClass('active02');
+      $(this).addClass('active02');
+    });
+    $("#profile").click(function() {
+      $("#home , #profile").removeClass('active02');
+      $(this).addClass('active02');
+    });
+  </script>
+  
+</body>
+</html>

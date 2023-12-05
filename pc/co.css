@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* 共通 */
+body{
+  margin: 0;
+}
+
+h1{
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.2em;
+  margin: 0;
+  text-align: center;
+  padding: 40px 0 5px 0;
+}
+
+h2{
+  font-size: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0;
+}
+
+h3{
+  font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 10px 0;
+}
+
+p{
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.1em;
+  color: #4B4A4B;
+  padding: 10px 0;
+  line-height: 2em;
+  margin: 0;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* コンセプトの動き */
+.bbs{
+  align-items: center;
+  /* background: #0e546b; */
+  color: #4B4A4B;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  overflow:hidden;
+  width: 100%;
+  white-space:nowrap;
+  margin-top: 100px;
+  z-index: 1;
+}
+.bbs ul {
+  animation: flowing 30s linear infinite;
+  font-size: 30px;
+  transform:translateX(100%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans',sans-serif;
+  letter-spacing: 0.1em;
+}
+.bbs ul li{
+  display: inline-block;
+  padding-right: 10px;
+}
+@keyframes flowing {
+  0% { transform:translateX(-100%); }
+  100% { transform:translateX(0); }
+}
+
+.image{
+  padding: 50px 0 0 0;
+}
+
+
+.content{
+  background-color: #ECEEF0;
+  padding: 50px 0;
+  position: relative;
+}
+
+.background{
+  padding: 50px 0;
+}
+
+.bbs{
+  position: absolute;
+  top: -120px;
+}
+
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition:all 2s;
+}
+
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}

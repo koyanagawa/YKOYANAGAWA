@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="img/icon.png" sizes="16x16" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <section class="back">
+      <a href="../index.html"><img src="../pcimg/mark.png" width="8px"><p>BACK TO START</p></a>
+    </section>
+    <section class="file_wrapper">
+      <div class="file01">
+        <input type="image" value="表示" src="../pcimg/file.png" width="50"
+        ondblclick="document.getElementById('file').style.visibility = 'visible';">
+        <p>WEBdesign</p>
+      </div>
+      <div class="file02">
+        <input type="image" value="表示" src="../pcimg/file.png" width="50"
+        ondblclick="document.getElementById('file').style.visibility = 'visible';">
+        <p>DTP</p>
+      </div>
+      <div class="file03">
+        <input type="image" value="表示" src="../pcimg/file.png" width="50"
+        ondblclick="document.getElementById('file').style.visibility = 'visible';">
+        <p>REALevent</p>
+      </div>
+    </section>
+  </main>
+
+  <section id="file">
+    <iframe src="file.html" frameBorder="0" width="80%" height="600" style="border-radius:20px" style="border: none;"></iframe>
+    <section id="close">
+      <input type="image" value="非表示" src="../pcimg/close.png" width="18"
+      onclick="document.getElementById('file').style.visibility = 'hidden';">
+    </section>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+  // ボタンの装飾
+  $(".file01").click(function() {
+  $(".file02 , .file03").removeClass('active');
+  $(this).addClass('active');
+});
+  $(".file02").click(function() {
+  $(".file01 , .file03").removeClass('active');
+  $(this).addClass('active');
+});
+  $(".file03").click(function() {
+  $(".file01 , .file02").removeClass('active');
+  $(this).addClass('active');
+});
+
+// document.body.click(function() {
+//   $(".file01 , .file02 , .file03").removeClass('active');
+// });
+
+// $(function () {
+//     //ウインドウ内クリックでの処理
+//     document.body.onclick = function ( event ) {
+//         removeClass('active');
+//     }
+// });
+
+// document.body.click(function() {
+//   $(".file02 , .file03").removeClass('active');
+//   $(this).addClass('active');
+// });
+
+  $('.file01').fadeIn(2000);
+  $('.file02').fadeIn(2000);
+  $('.file03').fadeIn(2000);
+</script>
+
+</body>
+</html>

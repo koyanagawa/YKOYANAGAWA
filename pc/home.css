@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* 共通 */
+body{
+  height: auto;
+  background-color: white;
+  margin: 0;
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+
+ul{
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.05em;
+  color: #4B4A4B;
+  display: flex;
+  padding: 7px 0;
+  margin: 5px;
+}
+
+/* 初期のスクロールを消す */
+body::-webkit-scrollbar { 
+  display:none;
+}
+
+li{
+  list-style-type: none;
+}
+
+p{
+  margin: 0;
+  padding: 3px 0 0 5px;
+  font-size: 10px;
+}
+
+.file{
+  display: flex;
+  height: 100%;
+}
+
+.content{
+  width: 100%;
+}
+
+.content_title{
+  border-bottom: 1px solid #D6D0D5;
+}
+
+.project{
+  display: flex;
+}
+
+.project_menue{
+  width: 20%;
+  background-color:#FFFFFF;
+  height:540px;
+  overflow:auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.project_menue img{
+  margin: 0 0 0 10px;
+}
+
+.project_name{
+  width: 22%;
+  background-color:#FFFFFF;
+  height:540px;
+  overflow:auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.project_name img{
+  margin: 0 0 0 10px;
+  object-fit: cover;
+  box-shadow: 0 0 2px gray;
+}
+
+/* スクロールバー */
+.project_project{ 
+  width: 58%;
+  background-color:#FFFFFF;
+  height:540px;
+  overflow:auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+} 
+
+.project_project::-webkit-scrollbar{
+  display: none;
+}
+
+/* webdesignのコンテンツページ初期を非表示 */
+#w01,#w02,#w03,#w04,#w05{
+  display: none;
+}
+/* DTPのコンテンツのページ初期を非表示 */
+#d01,#d02,#d03,#d04{
+  display: none;
+}
+/* REALのコンテンツページ初期を非表示 */
+#r01,#r02,#r03,#r04,#r05{
+  display: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+#titie01{
+  display: none;
+}
+
+#titie02{
+  display: none;
+}
+
+#titie03{
+  display: none;
+}
+
+.content_title{
+  height: 60px;
+  background-color: #F9F9F9;
+}
+
+.content_title h1{
+  padding: 25px 0 0 25px;
+  margin: 0;
+  color: #4B4A4B;
+}
+
+/* ボタン装飾 */
+.active{
+  border-radius: 8px;
+  background-color: #007AFF;
+  color: #ffffff;
+}
+
+.active02{
+  border-radius: 8px;
+  background-color: #E5E5E5;
+  color: #4B4A4B;
+}

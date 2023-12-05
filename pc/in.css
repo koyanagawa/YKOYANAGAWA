@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/* 共通 */
+body{
+  margin: 0;
+}
+
+h1{
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.2em;
+  margin: 0;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  margin: 20px auto;
+}
+
+p{
+  font-size: 5px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.1em;
+  color: #4B4A4B;
+  /* padding: 10px 0; */
+  line-height: 2em;
+  margin: 0;
+}
+
+.container{
+  position: relative;
+}
+
+.copy{
+  position: absolute;
+  top: 540px;
+  right: 50px;
+  text-align:right
+}
+
+.in01{
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.in02{
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.in03{
+  position: absolute;
+  top: 500px;
+  left: 100px;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content{
+  background-color: #ECEEF0;
+  margin-top: 500px;
+  position: relative;
+}
+
+.content02{
+  padding-top: 200px;
+}
+
+.content03{
+  padding: 30px 0 30px 0;
+}
+
+.content02 p{
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.1em;
+  color: #4B4A4B;
+  line-height: 2em;
+  margin: 0;
+}
+
+.circle01{
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.circle02{
+  animation:10s linear infinite rotation1;
+  position: absolute;
+  left: 24%;
+  top: -127px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
+ul{
+  list-style: none;
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.1em;
+  color: #4B4A4B;
+  padding: 10px 0;
+  line-height: 2em;
+}
+
+.text{
+  display: flex;
+}
+
+.text01,.text02{
+  background-color: #4B4A4B;
+  border-radius: 20px;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.text01 p{
+  color: #ffffff;
+}
+
+.text02 p{
+  color: #ffffff;
+}
+
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition:all 2s;
+}
+
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+/*スクロールダウン全体の場所*/
+.scrolldown1{
+  /*描画位置※位置は適宜調整してください*/
+position:absolute;
+right:50%;
+bottom:20px;
+  /*全体の高さ*/
+height:50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span{
+  /*描画位置*/
+position: absolute;
+left:-20px;
+top: -50px;
+  /*テキストの形状*/
+color: #4B4A4B;
+font-size: 0.7rem;
+letter-spacing: 0.2em;
+font-size: 9px;
+/* writing-mode: vertical-rl; */
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/* 線の描写 */
+.scrolldown1::after{
+content: "";
+  /*描画位置*/
+position: absolute;
+top: 0;
+  /*線の形状*/
+width: 1px;
+height: 40px;
+background: #4B4A4B;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+animation: pathmove 1.4s ease-in-out infinite;
+opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+0%{
+  height:0;
+  top:0;
+  opacity: 0;
+}
+30%{
+  height:40px;
+  opacity: 1;
+}
+100%{
+  height:0;
+  top:80px;
+  opacity: 0;
+}
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+#header{
+width:100%;
+height: 100vh;
+position: relative;
+} 
+
+#header:before{
+content: '';
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+width:100%;
+height: 100vh;
+/*背景画像設定*/
+background:url("../pcimg/in_background.jpg") no-repeat center;
+background-size:cover;
+}
+
+.container{
+position: relative;
+z-index:1;
+background:#ffffff;
+padding-top: 60px;
+}
+
+@media screen and (max-width:768px){
+  #header,
+  #header:before{
+height: 90vh;    
+  }
+  
+}

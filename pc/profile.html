@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA PROFILE</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main>
+    <section class="file">
+      <section class="content">
+        <div class="content_title">
+          <h1 id="title00">PROFILE</h1>
+          <h1 id="title01">Introduction</h1>
+          <h1 id="title02">Concept</h1> 
+          <h1 id="title03">Background</h1>
+        </div>
+
+        <section class="project">
+          <div class="project_name">
+            <li>
+              <ul id="button1"> <img src="../pcimg/introduction.png" height="18"><p>Introduction</p></ul>
+              <ul id="button2"> <img src="../pcimg/concept.png" height="18"><p>Concept</p></ul>
+              <ul id="button3"> <img src="../pcimg/background.png" height="18"><p>Background</p></ul>
+            </li>
+          </div>
+          <div class="project_project">
+            <table>
+              <!-- webdesign -->
+              <section id="in">
+                <iframe src="in.html" frameBorder="0" width="100%" height="600"></iframe>
+              </section>
+              <section id="co">
+                <iframe src="co.html" frameBorder="0" width="100%" height="600"></iframe>
+              </section>
+              <section id="ba">
+                <iframe src="ba.html" frameBorder="0" width="100%" height="600"></iframe>
+              </section>
+            </table>
+           </div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <!-- <input type="radio" id="button1" value="webdesign" />
+  <label>webdesin</label>
+  <input type="radio" id="p1" value="コンテンツ01" />
+  <label>コンテンツ01</label>
+  <input type="radio" id="p2" value="コンテンツ02" />
+  <label>コンテンツ02</label> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- profile -->
+  <script>
+    // 非表示
+    $('#title01 , #title02 , #title03 , #in , #co , #ba ').hide();
+    // $(this).css('color','black');
+
+    // イントロダクション
+    $("#button1").click(function() {
+      $("#in , #title01").toggle();
+      $('#co , #ba , #title02 , #title03 , #title00').hide();
+    });
+    // コンセプト
+    $("#button2").click(function() {
+      $("#co , #title02").toggle();
+      $('#in , #ba , #title01 , #title03 , #title00').hide();
+    });
+    // バックグラウンド
+    $("#button3").click(function() {
+      $("#ba , #title03").toggle();
+      $('#in , #co , #title01 , #title02 , #title00').hide();
+    });
+  </script>
+  <!-- ボタン装飾 -->
+  <script>
+    $("#button1").click(function() {
+    $("#button2 , #button3 ").removeClass('active');
+    $(this).addClass('active');
+    });
+    $("#button2").click(function() {
+    $("#button1 , #button3 ").removeClass('active');
+    $(this).addClass('active');
+    });
+    $("#button3").click(function() {
+    $("#button1 , #button2 ").removeClass('active');
+    $(this).addClass('active');
+    });
+  </script>
+  
+</body>
+</html>

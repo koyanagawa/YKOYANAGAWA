@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* 共通 */
+body{
+  height: auto;
+  background-color: white;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+
+ul{
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 0.05em;
+  color: #4B4A4B;
+  display: flex;
+  padding: 7px 0;
+  margin: 3px 5px;
+}
+
+/* 初期のスクロールを消す */
+body::-webkit-scrollbar { 
+  display:none;
+}
+
+li{
+  list-style-type: none;
+}
+
+p{
+  margin: 0;
+  padding: 3px 0 0 5px;
+  font-size: 10px;
+}
+
+.file{
+  /* border: 1px solid black; */
+  display: flex;
+  height: 100%;
+}
+
+/* .menue{
+  background-color: #D6D0D5;
+  flex: 1;
+} */
+
+.content{
+  /* flex: 5; */
+  width: 100%;
+}
+
+.content_title{
+  border-bottom: 1px solid #D6D0D5;
+}
+
+.project{
+  display: flex;
+}
+
+.project_name{
+  width: 20%;
+  background-color:#FFFFFF;
+  height:540px;
+  overflow:auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.project_name img{
+  margin: 0 0 0 10px;
+}
+
+/* スクロールバー */
+.project_project{ 
+  width: 80%;
+  background-color:#FFFFFF;
+  height:540px;
+  overflow:auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+} 
+
+.project_project::-webkit-scrollbar{
+  display: none;
+}
+
+/* webdesignのコンテンツページ初期を非表示 */
+#w01,#w02,#w03,#w04,#w05{
+  display: none;
+}
+/* DTPのコンテンツのページ初期を非表示 */
+#d01,#d02,#d03{
+  display: none;
+}
+/* REALのコンテンツページ初期を非表示 */
+#r01,#r02,#r03,#r04,#r05{
+  display: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+}
+
+#titie01{
+  display: none;
+}
+
+#titie02{
+  display: none;
+}
+
+#titie03{
+  display: none;
+}
+
+.content_title{
+  height: 60px;
+  background-color: #F9F9F9;
+}
+
+.content_title h1{
+  padding: 25px 0 0 25px;
+  margin: 0;
+  color: #4B4A4B;
+}
+
+.active{
+  border-radius: 8px;
+  background-color: #007AFF;
+  color: white;
+}
