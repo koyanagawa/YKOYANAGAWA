@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+}
+
+.content_wrapper{
+  width: 85%;
+  margin: 50px auto 100px auto;
+}
+
+.title{
+  text-align: center;
+}
+
+h1{
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+  margin: 10px 0 0 0;
+  letter-spacing: 0.2em;
+}
+
+h2{
+  font-size: 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #808080;
+  margin: 5px 0 50px 0;
+  letter-spacing: 0.2em;
+}
+
+h3{
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4B4A4B;
+  position: relative;
+  margin: 50px 0;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+h3::before{
+  background-color: #4B4A4B;; /* 線の色 */
+  border-radius: 5px; /* 線の両端を丸く */
+  bottom: -10px; /* 線の位置 */
+  content: "";
+  height: 3px; /* 線の高さ */
+  left: 50%; /* 線の中央寄せ */
+  position: absolute;
+  transform: translateX(-50%); /* 線の中央寄せ */
+  width: 120px; /* 線の長さ */
+}
+
+p{
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.1em;
+  line-height: 1.7em
+}
+
+.footer{
+  background-color: #ECEEF0;
+}
+
+.text{
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0 100px 0;
+}
+
+/* スクロール */
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition:all 2s;
+}
+
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}

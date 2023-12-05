@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA PROFILE</title>
+  <link rel="stylesheet" href="profile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <section class="top">
+    <h1>PROFILE</h1>
+    <div id="title_in"><h2>Introduction</h2></div>
+    <div id="title_co"><h2>Concept</h2></div>
+    <div id="title_ba"><h2>Background</h2></div>
+  </section>
+
+  <section class="content">
+    <div id="introduction">
+      <iframe src="introduction.html" frameBorder="0" width="100%" height="650"></iframe>
+    </div>
+    <div id="concept">
+      <iframe src="concept.html" frameBorder="0" width="100%" height="650"></iframe>
+    </div>
+    <div id="background">
+      <iframe src="background.html" frameBorder="0" width="100%" height="650"></iframe>
+    </div>
+  </section>
+
+  <setion class="footer">
+    <div id="button_in">
+      <img src="../spimg/introduction.png" height="30">
+    </div>
+    <div id="button_co">
+      <img src="../spimg/concept.png" height="30">
+    </div>
+    <div id="button_ba">
+      <img src="../spimg/background.png" height="30">
+    </div>
+  </setion>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    // 非表示
+    $('#concept , #background , #title_co , #title_ba').hide();
+    $("#button_in").click(function() {
+      $("#introduction , #title_in").toggle();
+      $('#concept , #background , #title_co , #title_ba').hide();
+    });
+
+    $("#button_co").click(function() {
+      $("#concept , #title_co").toggle();
+      $('#introduction , #background , #title_in , #title_ba').hide();
+    });
+
+    $("#button_ba").click(function() {
+      $("#background , #title_ba").toggle();
+      $('#introduction , #concept , #title_in , #title_co').hide();
+    });
+
+  </script>
+    <!-- ボタン装飾 -->
+    <script>
+      $("#button_in").click(function() {
+      $("#button_co , #button_ba").removeClass('active');
+      $(this).addClass('active');
+    });
+    $("#button_co").click(function() {
+      $("#button_in , #button_ba").removeClass('active');
+      $(this).addClass('active');
+    });
+    $("#button_ba").click(function() {
+      $("#button_in , #button_co").removeClass('active');
+      $(this).addClass('active');
+    });
+  </script>
+  
+</body>
+</html>

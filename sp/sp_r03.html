@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA REALevent</title>
+  <link rel="stylesheet" href="sp_r03.css">
+</head>
+<body>
+  <a href="real.html" alt="REALeventの一覧ページに戻ります">
+  <section class="top">
+    <section class="back">
+      <img src="../spimg/back_button.png" width="80" alt="戻るボタン">
+    </section>
+    <section class="icon">
+      <img src="../spimg/r03_kv.jpg" width="50" height="50" style="border-radius: 50%;">
+      <h1>docomo gameshow 2019</h1>
+    </section>
+  </section>
+</a>
+
+<header id="header">
+  <header id="header">
+  <div class="scrolldown1"><span>SCROLL</span></div>
+</header>
+  
+<section class="container">
+  <section class="content">
+    <section class="project">
+      <h2 class="fadein">#design#planning#graphicdirection</h2>
+      <p class="fadein">TOKYO gameshow 2019のdocomoブースの設計を担当。[FOR GAME CHANGERS]5G通信の登場で、同時多接続、高速通信の新しいゲーム業界のあり方を力強く表現。ブース中央では50人同時対戦の様子が配信され、メディアでも広く取り上げられた。</p>
+      <div class="url fadein">
+        <div class="url_title"><h2>-REALevent</h2></div>
+        <div class="url_link"><a href="https://www.docomo.ne.jp/special_contents/5g/realization/articles/article_06/" target="_blank">URL</a></div>
+      </div>
+      <div class="content01 fadein">
+        <img src="../spimg/r03_content01.jpg" width="100%">
+      </div>
+      <div class="content02 fadein">
+        <img src="../spimg/r03_content02.jpg" width="100%">
+      </div>
+      <div class="content03 fadein">
+        <img src="../spimg/r03_content03.jpg" width="100%">
+      </div>
+      <div class="content04 fadein">
+        <img src="../spimg/r03_content04.jpg" width="100%">
+      </div>
+      <div class="content04 fadein">
+        <img src="../spimg/r03_content05.jpg" width="100%">
+      </div>
+    </section>
+  </section>
+</section>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $(window).scroll(function (){
+    $('.fadein').each(function(){
+      var elementTop = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elementTop - windowHeight + 100){
+        $(this).addClass('scrollin');
+      }
+    });
+  });
+});
+</script>
+ 
+</body>
+</html>

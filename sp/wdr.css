@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body{
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+  color:  #4B4A4B;
+}
+
+h1{
+  margin: 75px 15px 15px 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: #4B4A4B;
+  letter-spacing: 0.2em;
+}
+
+h2{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+p{
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  height: 3.0em; /* line-height 1.8 x 3em（行数） */
+}
+
+.photo{
+  margin: auto 0 auto 15px;
+}
+
+.photo img{
+  object-fit: cover;
+}
+
+.text{
+  margin: 0 15px;
+  border-top: 1px solid #D6D0D5;
+  /* border-bottom: 1px solid #D6D0D5; */
+}
+
+.content01{
+  display: flex;
+}
+
+.title{
+  display: flex;
+  margin: 10px 0;
+}
+
+.button{
+  margin: auto 0 auto auto;
+}
+

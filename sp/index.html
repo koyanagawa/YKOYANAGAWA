@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="../spimg/icon.png" sizes="16x16" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- List部分 -->
+  <section class="tab01">
+    <div class="Profile">
+      <img src="../spimg/SP_Profile.png" class="fileList" href="#profile" width="80">
+      <p>Profile</p>
+    </div>
+  </section>
+
+  <section class="back">
+    <a href="../index.html"><img src="../spimg/mark_white.png" width="8px"><p>BACK TO START</p></a>
+  </section>
+
+  <section class="tab02">
+    <div class="WEBdesign">
+      <img src="../spimg/SP_WEBdesign.png" class="fileList" href="#webdesign" width="80">
+      <p>WEBdesign</p>
+    </div>
+    <div class="DTP">
+      <img src="../spimg/SP_DTP.png" class="fileList" href="#dtp" width="80">
+      <p>DTP</p>
+    </div>
+    <div class="REAL">
+      <img src="../spimg/SP_REALevent.png" class="fileList" href="#real" width="80">
+      <p>REALevent</p>
+    </div>
+  </section>
+
+  <!-- Sections -->
+  <div id="profile" class="file">
+    <div class="CLOSE">
+      <a href="#close" class='fileList'><img src="../spimg/close.png" width="20"></a>
+    </div>
+    <iframe src="profile.html" frameBorder="0" width="100%" height="570" style="border-radius:20px" style="border: none;"></iframe>
+  </div>
+
+  <div id="webdesign" class="file">
+    <div class="CLOSE">
+      <a href="#close" class='fileList'><img src="../spimg/close.png" width="20"></a>
+    </div>
+    <iframe src="webdesign.html" frameBorder="0" width="100%" height="570" style="border-radius:20px" style="border: none;"></iframe>
+  </div>
+
+  <div id="dtp" class="file">
+    <div class="CLOSE">
+      <a href="#close" class='fileList'><img src="../spimg/close.png" width="20"></a>
+    </div>
+    <iframe src="dtp.html" frameBorder="0" width="100%" height="570" style="border-radius:20px" style="border: none;"></iframe>
+  </div>
+
+  <div id="real" class="file">
+    <div class="CLOSE">
+      <a href="#close" class='fileList'><img src="../spimg/close.png" width="20"></a>
+    </div>
+    <iframe src="real.html" frameBorder="0" width="100%" height="570" style="border-radius:20px" style="border: none;"></iframe>
+  </div>
+
+  <!-- <div id="close" class="tab"></div> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script>
+  $(function(){
+  $('.file').hide();
+  $('.fileList').on('click',function(){
+  $('.file').not($($(this).attr('href'))).hide();
+    // show を使うと、表示するだけ （ 同じボタンを何回押しても変わらない ）
+    $($(this).attr('href')).show();
+  });
+  });
+  </script>
+
+  <script>
+    $('.tab01').fadeIn(2000);
+    $('.tab02').fadeIn(2000);
+  </script>
+
+</body>
+</html>

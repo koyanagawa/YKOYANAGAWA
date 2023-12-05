@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+  background-color: white;
+}
+
+.top{
+  background-color: #ffffff;
+  border-bottom: 1px solid #D6D0D5;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  top: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+  text-align: center;
+  padding: 13px 0;
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  color:  #4B4A4B;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  letter-spacing: 0.2em;
+}
+
+h2{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #808080;
+  letter-spacing: 0.2em;
+  margin: 5px 0 0 0;
+}
+
+#title_in{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color:  #4B4A4B;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+#title_co,#title_ba{
+  display: none;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color:  #4B4A4B;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+#introduction{
+  /* display: none; */
+}
+
+#concept{
+  display: none;
+}
+
+#background{
+  display: none;
+}
+
+.content{
+  margin-top: 75px;
+}
+
+.footer{
+  width: 100%;
+  padding: 13px 0;
+  display: flex;
+  position: relative;
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  bottom: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+  background-color: #E9E9EB;
+  border-top: 1px solid #D6D0D5;
+}
+
+#button_in{
+  margin: 0 auto 0 100px;
+  opacity: 0.5;
+}
+
+#button_co{
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+#button_ba{
+  margin: 0 100px 0 auto;
+  opacity: 0.5;
+}
+
+/* ボタン装飾 */
+.active{
+  opacity:1!important;
+}
