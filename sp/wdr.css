@@ -12,7 +12,7 @@ a{
 h1{
   margin: 75px 15px 15px 15px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #4B4A4B;
   letter-spacing: 0.2em;
 }
@@ -20,7 +20,7 @@ h1{
 h2{
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.1em;
 }
 
@@ -30,6 +30,8 @@ p{
   line-height: 1.5;
   overflow: hidden;
   height: 3.0em; /* line-height 1.8 x 3em（行数） */
+  font-family: 'Noto Sans JP', sans-serif;
+  color:  #4B4A4B;
 }
 
 .photo{
