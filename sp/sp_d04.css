@@ -16,7 +16,7 @@ h1{
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   color:  #4B4A4B;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.15em;
 }
 
@@ -53,10 +53,10 @@ h1{
 /* コンテンツの要素 */
 
 h2{
-  font-size: 12px;
+  font-size: 9px;
   font-family: 'Josefin Sans', sans-serif;
   color: #808080;
-  margin: 25px 0;
+  margin: 25px 0 14ox 0;
   letter-spacing: 0.2em;
   line-height: 1.7em
 }
