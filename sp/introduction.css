@@ -40,11 +40,11 @@ h3{
 }
 
 h3::before{
-  background-color: #4B4A4B;; /* 線の色 */
+  background-color: #4B4A4B; /* 線の色 */
   border-radius: 5px; /* 線の両端を丸く */
   bottom: -10px; /* 線の位置 */
   content: "";
-  height: 3px; /* 線の高さ */
+  height: 2px; /* 線の高さ */
   left: 50%; /* 線の中央寄せ */
   position: absolute;
   transform: translateX(-50%); /* 線の中央寄せ */
