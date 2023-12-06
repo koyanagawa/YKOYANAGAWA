@@ -47,6 +47,7 @@ p{
   border: none;
   margin: 30px;
   opacity: 0.9;
+  color: black;
 }
 
 #pc_btn:hover{
