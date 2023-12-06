@@ -56,8 +56,20 @@ p{
 
 .url_link{
   font-weight: bold;
-  margin: 0 0 0 auto;
+  margin-left: auto;
   color: #808080;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 6px;
+}
+
+.url_link a{
+  color: #007AFF;
+  text-decoration:underline;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 6px;
 }
 
 .content{
