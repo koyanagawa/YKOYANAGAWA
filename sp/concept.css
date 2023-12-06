@@ -14,7 +14,7 @@ body{
 }
 
 h1{
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
   margin: 10px 0 0 0;
@@ -30,7 +30,7 @@ h2{
 }
 
 h3{
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
   position: relative;
@@ -44,7 +44,7 @@ h3::before{
   border-radius: 5px; /* 線の両端を丸く */
   bottom: -10px; /* 線の位置 */
   content: "";
-  height: 3px; /* 線の高さ */
+  height: 2px; /* 線の高さ */
   left: 50%; /* 線の中央寄せ */
   position: absolute;
   transform: translateX(-50%); /* 線の中央寄せ */
