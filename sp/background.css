@@ -2,11 +2,12 @@
 
 body{
   margin: 0;
+  background-color: #D0D0D0;
 }
 
 .content_wrapper{
   width: 85%;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .title{
@@ -17,7 +18,7 @@ h1{
   font-size: 14px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
-  margin: 20px 0 0 0;
+  margin: 10px 0;
   letter-spacing: 0.2em;
 }
 
@@ -51,21 +52,25 @@ h3::before{
   width: 120px; /* 線の長さ */
 }
 
+h3::before{
+  background-color: #4B4A4B;; /* 線の色 */
+  border-radius: 5px; /* 線の両端を丸く */
+  bottom: -10px; /* 線の位置 */
+  content: "";
+  height: 2px; /* 線の高さ */
+  left: 50%; /* 線の中央寄せ */
+  position: absolute;
+  transform: translateX(-50%); /* 線の中央寄せ */
+  width: 60px; /* 線の長さ */
+}
+
 h4{
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
   margin: 10px 0 30px 0;
   letter-spacing: 0.2em;
-}
-
-.content{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.content01,.content02,.content03,.content04{
-  width: 50%;
+  line-height: 1.7em;
 }
 
 p{
@@ -73,21 +78,32 @@ p{
   font-family: 'Noto Sans JP', sans-serif;
   color: #4B4A4B;
   letter-spacing: 0.1em;
-  line-height: 1.7em
+  line-height: 1.7em;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.text{
+  border-top: 1px solid #4B4A4B;
+  border-bottom: 1px solid #4B4A4B;
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .footer{
-  background-color: #ECEEF0;
+  padding: 40px 0 70px 0;
+  display: flex;
 }
 
-
-.text h1{
-  font-size: 12px;
-  margin: 40px 0 0 0;
+.footer h2{
+  text-align: right;
+  margin: auto 0 0 auto;
 }
 
-.text img{
-  padding: 50px 0;
+.footer h4{
+  margin: 0;
+  padding: 0;
+  font-size: 7px;
 }
 
 /* スクロール */
@@ -101,3 +117,79 @@ p{
   opacity : 1;
   transform : translate(0, 0);
 }
+
+/* マークのアニメーション */
+/* .repeat-fadein-out{
+  animation-name: smooth-fadein-out;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes smooth-fadein-out {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} */
+
+.markfadein {
+  animation-name: markfadein;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes markfadein {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+#header{
+width:100%;
+height: 100vh;
+position: relative;
+} 
+
+#header img{
+  position: fixed;
+  top: 51%;
+  right: 4%;
+  z-index:-1;
+}
+
+#header:before{
+content: '';
+position:fixed;
+left:0;
+z-index:-1;
+width:100%;
+height: 100vh;
+/*背景画像設定*/
+background:url("img/movie_SP_background.gif") no-repeat center;
+background-size:cover;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+.container{
+  position: relative;
+  z-index: -1;
+  background:#ffffff;
+  padding-top: 7px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  }
+  
+  @media screen and (max-width:768px){
+    #header,
+    #header:before{
+    height: 60vh;  
+    }
+  }
