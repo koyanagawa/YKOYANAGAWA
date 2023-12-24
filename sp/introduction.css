@@ -6,18 +6,27 @@ body{
 
 .content_wrapper{
   width: 85%;
-  margin: 50px auto;
+  margin: 50px auto 0px auto;
 }
 
 .title{
   text-align: center;
 }
 
+.gif{
+  position: relative;
+}
+.gif .check{
+  position: absolute;
+  top: 85%;
+  right: 4%;
+}
+
 h1{
   font-size: 14px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
-  margin: 20px 0 0 0;
+  margin: 5px 0 0 0;
   letter-spacing: 0.2em;
 }
 
@@ -25,7 +34,7 @@ h2{
   font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
   color: #808080;
-  margin: 5px 0 50px 0;
+  margin: 5px 0 10px 0;
   letter-spacing: 0.2em;
 }
 
@@ -40,7 +49,7 @@ h3{
 }
 
 h3::before{
-  background-color: #4B4A4B; /* 線の色 */
+  background-color: #4B4A4B;; /* 線の色 */
   border-radius: 5px; /* 線の両端を丸く */
   bottom: -10px; /* 線の位置 */
   content: "";
@@ -52,20 +61,20 @@ h3::before{
 }
 
 h4{
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
   margin: 10px 0 30px 0;
   letter-spacing: 0.2em;
+  line-height: 1.7em;
 }
 
-.content{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.content01,.content02,.content03,.content04{
-  width: 50%;
+h5{
+  font-size: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #4B4A4B;
+  letter-spacing: 0.1em;
+  line-height: 1.7em
 }
 
 p{
@@ -73,42 +82,97 @@ p{
   font-family: 'Noto Sans JP', sans-serif;
   color: #4B4A4B;
   letter-spacing: 0.1em;
-  line-height: 1.7em
+  line-height: 1.7em;
+  padding: 10px 0; 
 }
 
-.footer{
-  background-color: #ECEEF0;
+.line{
+  display: flex;
+}
+
+.line h4,h5,p{
+  margin: 0;
+}
+
+.line h4{
+  padding-top: 5px;
+  font-size: 10px;
+}
+
+.line01{
+  width: 40%;
+}
+
+.line02{
+  width: 65%;
+}
+
+.line02 p{
+  padding: 0;
+}
+
+.content01{
+  display: flex;
+}
+
+.content02{
+  border-top: 1px solid #4B4A4B;
+  border-bottom: 1px solid #4B4A4B;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.content03{
+  display: flex;
+}
+
+.name{
+  padding-left: 15px;
 }
 
 .text{
-  width: 85%;
+  width: 50%;
   margin: 0 auto;
-  padding: 10px 0 100px 0;
+  padding: 0 0 10px 0;
+}
+
+.textimg{
+  width: 50%;
+  padding: 10px 0 20px 10px;
 }
 
 .text h1{
-  font-size: 12px;
   margin: 40px 0 0 0;
 }
 
 .text01,.text02{
   background-color: #4B4A4B;
   border-radius: 20px;
-  padding: 0 10px;
-  margin: 0 10px;
+  padding: 3px 0;
+  margin: 10px 0;
   text-align: center;
 }
 
 .text01 p{
   color: #ffffff;
+  font-size: 8px;
+  padding: 0;
 }
 
-.text02 p{
-  color: #ffffff;
+.footer{
+  margin: 25px 0px 70px 0px;
+  display: flex;
 }
 
-.text img{
-  padding: 50px 0;
+.footer h2{
+  text-align: right;
+  margin: auto 0 0 auto;
+}
+
+.footer h4{
+  margin: 0;
+  padding: 0;
+  font-size: 7px;
 }
 
 /* スクロール */
