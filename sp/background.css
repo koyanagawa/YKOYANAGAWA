@@ -124,6 +124,7 @@ p{
   animation-name: markfadein;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  transform: translateY(20px);
 }
 @keyframes markfadein {
 from {
