@@ -5,55 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y.KOYANAGAWA PROFILE</title>
   <link rel="stylesheet" href="background.css">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <section class="content_wrapper">
-    <section class="title">
-      <h1>BACKGROUND</h1>
-      <h2>i∞block</h2>
-    </section>
-    <section class="content">
-      <img src="../spimg/ba_content01.png" width="100%">
-      <p class="fadein">
-        2〜3歳は想像力を育む事に適した年齢と言われており、その代表的な知育玩具のひとつが積み木と言われている。
-        <br>しかし、既製品の積み木の多くは最初から色が着いたものが販売されており、色彩感覚が子供達の想像力を奪っているのではないかと仮説し、プロダクトを制作。
-        <br><br>デジタル技術を駆使し、
-        <br>「イロ」を自由につくり出す積み木で発想力を培う知育玩具を学生時代に提案、モックアップ制作を行なった。
-      </p>
+  <header id="header">
+    <img src="img/check.png" width="40" height="40">
+  </header>
+  
+  <section class="container">
+    <section class="content_wrapper">
+      <section class="title markfadein">
+        <img src="img/scroll_mark.png" width="5%" height="5%">
+      </section>
+      <section class="content">
+        <h3>BACKGROUND</h3>
+        <h1 class="fadein">学生時代の作品について</h1>
+        <p class="fadein">
+          2〜3歳は想像力を育む事に適した年齢と言われており、その代表的な知育玩具のひとつが積み木と言われている。しかし、既製品の積み木の多くは最初から色が着いたものが販売されており、色彩感覚が子供達の想像力を奪っているのではないかと仮説し、プロダクトを制作。デジタル技術を駆使し、「イロ」を自由につくり出す積み木で発想力を培う知育玩具を学生時代に提案、モックアップ制作を行なった。
+        </p>
+      </section>
+      <section class="text fadein">
+        <h1 class="fadein">デザインの原点</h1>
+        <p class="fadein">
+          学生時代はプロダクトやサービスを0から制作するための学問として、「デザイン」「プログラム」「マーケティング」の3つの領域を横断するような学科に所属してもづくりをしていました。よく課題として挙げられていたのは、「まだこの世にないプロダクトやサービスを制作せよ。」というものでした。市場分析、プロダクト価格の妥当性の検討、新商品企画、ネーミング企画、ターゲット選定、製品内のプログラミングなど、マーケティング観点からデザイン思考、プログラマー視点を持ちながら制作をします。中でも「本質」を見出してものづくりを行うデザイン思考に心を打たれ、デザイナーを志すようになりました。意味の無い製品やサービスはこの世にひとつもなく、その製品には必ず本質的な意義や意図が存在します。常に固定概念や既製品に対して、なぜこの仕様なのか?思考し続けることがデザイナーにとって何よりも学びになることで、求められ続けることだと考えております。
+        </p>
+        <img class="fadein" src="img/ba_background.png" width="100%">
+      </section>
+      <section class="footer">
+        <h4>About works from student days.<br>
+          The origin of my design.</h4>
+          <h2>i∞block</h2>
+      </section>
     </section>
   </section>
-  <img class="fadein" src="../spimg/ba_content02.png" width="100%">
 
-  <section class="content_wrapper">
-    <section class="text">
-      <h3>BACKGROUND</h3>
-      <p class="fadein">学生時代はプロダクトやサービスを0から制作するための学問として、「デザイン」「プログラム」「マーケティング」の3つの領域を横断するような学科に所属してもづくりをしていました。よく課題として挙げられていたのは、「まだこの世にないプロダクトやサービスを制作せよ。」というものでした。<br><br>市場分析、プロダクト価格の妥当性の検討、新商品企画、ネーミング企画、ターゲット選定、製品内のプログラミングなど、マーケティング観点からデザイン思考、プログラマー視点を持ちながら制作をします。<br><br>中でも「本質」を見出してものづくりを行うデザイン思考に心を打たれ、デザイナーを志すようになりました。製品には必ず本質的な意義や意図が存在します。常に固定概念や既製品に対して、なぜこの仕様なのか?思考し続けることがデザイナーにとって何よりも学びになることで、求められ続けることだと考えております。
-      </p>
-      <img class="fadein" src="../spimg/ba_content03.png" width="100%">
-  </section>
-</section>
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(function(){
-  $(window).scroll(function (){
-    $('.fadein').each(function(){
-      var elementTop = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > elementTop - windowHeight + 100){
-        $(this).addClass('scrollin');
-      }
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $(window).scroll(function (){
+      $('.fadein').each(function(){
+        var elementTop = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elementTop - windowHeight + 100){
+          $(this).addClass('scrollin');
+        }
+      });
     });
   });
-});
-</script>
-
+  </script>
+  
 </body>
 </html>
