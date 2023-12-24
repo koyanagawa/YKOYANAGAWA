@@ -118,21 +118,6 @@ p{
   transform : translate(0, 0);
 }
 
-/* マークのアニメーション */
-/* .repeat-fadein-out{
-  animation-name: smooth-fadein-out;
-  animation-duration: 0.8s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes smooth-fadein-out {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-} */
-
 .markfadein {
   animation-name: markfadein;
   animation-duration: 2s;
