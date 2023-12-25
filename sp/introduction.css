@@ -23,7 +23,7 @@ body{
 }
 
 h1{
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
   margin: 5px 0 0 0;
@@ -31,7 +31,7 @@ h1{
 }
 
 h2{
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Josefin Sans', sans-serif;
   color: #808080;
   margin: 5px 0 10px 0;
@@ -39,7 +39,7 @@ h2{
 }
 
 h3{
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Josefin Sans', sans-serif;
   color: #4B4A4B;
   position: relative;
@@ -78,7 +78,7 @@ h5{
 }
 
 p{
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Noto Sans JP', sans-serif;
   color: #4B4A4B;
   letter-spacing: 0.1em;
