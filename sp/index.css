@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-html{
-  overflow: visible;
-}
-
 body{
   background-image: url(../spimg/SP_portfolio_backgroundimg02.jpg);
   background-size: cover;
