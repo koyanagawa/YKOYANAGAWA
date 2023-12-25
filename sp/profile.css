@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-html{
-  overflow: visible;
-}
-
 body{
   margin: 0;
   background-color: white;
