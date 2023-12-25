@@ -5,6 +5,10 @@ body{
   background-color: white;
 }
 
+body::-webkit-scrollbar{
+  display:none;
+}
+
 .top{
   background-color: #ffffff;
   border-bottom: 1px solid #D6D0D5;
