@@ -16,6 +16,7 @@ body{
 .gif{
   position: relative;
 }
+
 .gif .check{
   position: absolute;
   top: 85%;
