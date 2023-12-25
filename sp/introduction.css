@@ -5,7 +5,7 @@ body{
 }
 
 .content_wrapper{
-  width: 85%;
+  width: 80%;
   margin: 50px auto 0px auto;
 }
 
@@ -97,7 +97,7 @@ p{
 
 .line h4{
   padding-top: 5px;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .line01{
@@ -156,7 +156,7 @@ p{
 
 .text01 p{
   color: #ffffff;
-  font-size: 8px;
+  font-size: 5px;
   padding: 0;
 }
 
