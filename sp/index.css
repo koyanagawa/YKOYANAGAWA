@@ -4,6 +4,7 @@ body{
   background-image: url(../spimg/SP_portfolio_backgroundimg02.jpg);
   background-size: cover;
   background-attachment: fixed;
+  height: 100dvh;
 }
 
 p{
