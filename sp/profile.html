@@ -46,26 +46,29 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
-    // 非表示
-    $('#concept , #background , #title_co , #title_ba').hide();
+    
+    $('#introduction , #title_in').show();
+
     $("#button_in").click(function() {
-      $("#introduction , #title_in").toggle();
+      $("#introduction , #title_in").show();
       $('#concept , #background , #title_co , #title_ba').hide();
     });
-
+    
     $("#button_co").click(function() {
-      $("#concept , #title_co").toggle();
+      $("#concept , #title_co").show();
       $('#introduction , #background , #title_in , #title_ba').hide();
     });
 
     $("#button_ba").click(function() {
-      $("#background , #title_ba").toggle();
+      $("#background , #title_ba").show();
       $('#introduction , #concept , #title_in , #title_co').hide();
     });
 
   </script>
     <!-- ボタン装飾 -->
     <script>
+      $('#button_in').addClass('active');
+      
       $("#button_in").click(function() {
       $("#button_co , #button_ba").removeClass('active');
       $(this).addClass('active');
