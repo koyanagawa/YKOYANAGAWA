@@ -74,7 +74,7 @@ p{
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
+  object-fit: cover;
   width: 100%;
   vertical-align: bottom;
 }
