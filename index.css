@@ -75,9 +75,16 @@ p{
   top: 0;
   left: 0;
   object-fit: cover;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
   width: 100vw;
-/*   height: 100vh; */
+  /* height: 100vh; */
   vertical-align: bottom;
+}
+
+#sp_movie img{
+  width: 100%;
 }
 
 #pc_content{
