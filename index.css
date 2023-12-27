@@ -2,7 +2,7 @@
 
 body{
   margin: 0;
-  width: 100%;
+  width: 100vw;
   background-color: black;
 }
 
@@ -72,12 +72,9 @@ p{
 
 #sp_movie{
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
   object-fit: cover;
   width: 100vw;
-  vertical-align: bottom;
+  height: auto;
 }
 
 #sp_movie img{
