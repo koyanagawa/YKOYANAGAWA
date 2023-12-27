@@ -2,7 +2,9 @@
 
 body{
   margin: 0;
+  padding: 0;
   width: 100vw;
+  height: 100vh;
   background-color: black;
 }
 
@@ -72,6 +74,7 @@ p{
 
 #movie{
   margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
@@ -79,7 +82,8 @@ p{
 #sp_movie{
   object-fit: cover;
   display: none;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 #pc_content{
