@@ -1,10 +1,17 @@
 @charset "utf-8";
 
 body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(../spimg/SP_portfolio_backgroundimg02.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100dvh;
+}
+
+main {
+  display: none;
 }
 
 p{
@@ -13,6 +20,21 @@ p{
   font-size: 10px;
   margin: 5px 10px 0 0;
   letter-spacing: 0.2em;
+}
+
+/* 動画の設定 */
+#opv-wrap {
+  display: none;
+}
+
+video#opv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  /* height: 100vh; */
+  vertical-align: bottom;
 }
 
 /* バックボタンの仕様 */
