@@ -17,6 +17,16 @@
   
 </head>
 <body>
+
+
+<div id="opv-wrap">
+  <video id="opv" autoplay muted playsinline>
+    <source src="../img/movie_sp.mp4" type="video/mp4">
+  </video>
+</div>
+
+<main>
+    
   <!-- List部分 -->
   <section class="tab01">
     <div class="Profile">
@@ -75,24 +85,44 @@
     <iframe src="real.html" frameBorder="0" width="100%" height="570" style="border-radius:20px" style="border: none;"></iframe>
   </div>
 
+</main>
+
   <!-- <div id="close" class="tab"></div> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
-  <script>
-  $(function(){
-  $('.file').hide();
-  $('.fileList').on('click',function(){
-  $('.file').not($($(this).attr('href'))).hide();
-    // show を使うと、表示するだけ （ 同じボタンを何回押しても変わらない ）
-    $($(this).attr('href')).show();
-  });
-  });
-  </script>
+ <!-- ファイルの表示設定 -->
+    <script>
+    $(function(){
+    $('.file').hide();
+    $('.fileList').on('click',function(){
+    $('.file').not($($(this).attr('href'))).hide();
+      // show を使うと、表示するだけ （ 同じボタンを何回押しても変わらない ）
+      $($(this).attr('href')).show();
+    });
+    });
+    </script>
 
+<!-- アイコンの表示の設定 -->
   <script>
     $('.tab01').fadeIn(2000);
     $('.tab02').fadeIn(2000);
+  </script>
+
+<!-- 動画の再生 -->
+  <script>
+    $(function(){
+    const opVideo = $('#opv').get(0);
+    $('#opv-wrap').fadeIn(0);
+    opVideo.addEventListener('loadedmetadata', function() {
+      const playTime = opVideo.duration * 1000 - 1000;
+      setTimeout(function(){
+        $('#opv-wrap').fadeOut(1000, function(){
+          $("main").fadeIn(1000);
+        });
+      }, playTime);
+    });
+    });
   </script>
 
 </body>
