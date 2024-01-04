@@ -51,7 +51,7 @@ a{
 }
 
 .btn01, .btn02{
-  display: none;
+/*   display: none; */
 }
 
 a:hover{
