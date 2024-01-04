@@ -12,6 +12,10 @@ body{
   background-size: cover;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 main{
   display: none;
   margin: 0 auto;
