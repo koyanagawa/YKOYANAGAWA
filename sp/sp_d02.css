@@ -179,7 +179,7 @@ top: 0;
   /*線の形状*/
 width: 1px;
 height: 40px;
-background: #D6D0D5;
+background: #808080;
   /*線の動き1.4秒かけて動く。永遠にループ*/
 animation: pathmove 1.4s ease-in-out infinite;
 opacity:0;
