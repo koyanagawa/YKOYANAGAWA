@@ -81,8 +81,8 @@ p{
 
 .url{
   display: flex;
-  border-top: 1px solid #808080;
-  border-bottom: 1px solid #808080;
+  border-top: 1px solid #D6D0D5;
+  border-bottom: 1px solid #D6D0D5;
   padding: 10px;
 }
 
@@ -167,6 +167,7 @@ letter-spacing: 0.2em;
 font-size: 9px;
 writing-mode: vertical-rl;
 font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
 }
 
 /* 線の描写 */
