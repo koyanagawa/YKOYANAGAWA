@@ -49,7 +49,7 @@ h3::before{
   left: 50%; /* 線の中央寄せ */
   position: absolute;
   transform: translateX(-50%); /* 線の中央寄せ */
-  width: 120px; /* 線の長さ */
+  width: 50px; /* 線の長さ */
 }
 
 h3::before{
@@ -61,7 +61,7 @@ h3::before{
   left: 50%; /* 線の中央寄せ */
   position: absolute;
   transform: translateX(-50%); /* 線の中央寄せ */
-  width: 60px; /* 線の長さ */
+  width: 50px; /* 線の長さ */
 }
 
 h4{
@@ -84,8 +84,8 @@ p{
 }
 
 .text{
-  border-top: 1px solid #4B4A4B;
-  border-bottom: 1px solid #4B4A4B;
+  border-top: 1px solid #D6D0D5;
+  border-bottom: 1px solid #D6D0D5;
   margin: 10px 0;
   padding: 10px 0;
 }
@@ -98,13 +98,14 @@ p{
 .footer h2{
   text-align: right;
   margin: auto 0 0 auto;
-  color: #4B4A4B;
+  color: #808080;
   font-size: 10px;
 }
 
 .footer h4{
   margin: 0;
   padding: 0;
+  color: #808080;
   font-size: 5px;
 }
 
