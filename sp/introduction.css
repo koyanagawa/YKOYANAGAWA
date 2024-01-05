@@ -75,7 +75,8 @@ h5{
   font-family: 'Noto Sans JP', sans-serif;
   color: #4B4A4B;
   letter-spacing: 0.1em;
-  line-height: 1.7em
+  line-height: 1.7em;
+  font-weight: unset;
 }
 
 p{
@@ -110,6 +111,7 @@ p{
 
 .line02 p{
   padding: 0;
+  font-weight: bold;
 }
 
 .content01{
