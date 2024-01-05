@@ -82,8 +82,8 @@ p{
 
 .url{
   display: flex;
-  border-top: 1px solid #808080;
-  border-bottom: 1px solid #808080;
+  border-top: 1px solid #D6D0D5;
+  border-bottom: 1px solid #D6D0D5;
   padding: 10px;
 }
 
@@ -162,12 +162,13 @@ position: absolute;
 left:-5px;
 top: -50px;
   /*テキストの形状*/
-color: #4B4A4B;
+color: #808080;
 font-size: 0.7rem;
 letter-spacing: 0.2em;
 font-size: 9px;
 writing-mode: vertical-rl;
 font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
 }
 
 /* 線の描写 */
@@ -179,7 +180,7 @@ top: 0;
   /*線の形状*/
 width: 1px;
 height: 40px;
-background: #4B4A4B;
+background: #D6D0D5;
   /*線の動き1.4秒かけて動く。永遠にループ*/
 animation: pathmove 1.4s ease-in-out infinite;
 opacity:0;
