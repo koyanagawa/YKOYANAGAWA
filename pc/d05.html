@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA DTP</title>
+  <link rel="stylesheet" href="d05.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <header id="header">
+    <div class="scrolldown1"><span>SCROLL</span></div>
+  </header>
+  <!-- <img src="img/d04_kv.jpg" alt="KV画像" width="100%"> -->
+  <section class="container">
+  <section class="wrapper">
+    <h1>TALLMAN</h1>
+    <h2>#logo#insole#design</h2>
+    <p class="fadein">子供の成長をサポートするインソールブランド「TALLMAN」のロゴデザインと、インソールデザインを担当。成長を意味するアイコンと、歩く人を融合したロゴを考案。インソールは成長過程でも長く使ってもらえるようにシンプルな流線のデザインで作成。</p>
+    <div class="url fadein">
+      <div class="url_title"><h2>-DTP</h2></div>
+      <div class="url_link"><a href="https://www.amazon.co.jp/TALLMAN-%E6%88%90%E9%95%B7%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88-%E9%AA%A8%E6%A0%BC%E7%AD%8B%E9%87%8F%E5%A2%97%E5%BC%B7%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88-%E3%83%88%E3%83%83%E3%83%97%E3%82%A2%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%88%E4%BD%BF%E7%94%A8-23-0-24-5/dp/B0CCKYKN6Y" target="_blank">URL</a></div>
+    </div>
+    <section class="content">
+      <section class="content_wrapper">
+        <div class="content01 fadein">
+          <img src="img/d05_content01.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content02 fadein">
+          <img src="img/d05_content02.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+      </section>
+    </section>
+  </section>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+  $(function(){
+    $(window).scroll(function (){
+      $('.fadein').each(function(){
+        var elementTop = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elementTop - windowHeight + 100){
+          $(this).addClass('scrollin');
+        }
+      });
+    });
+  });
+  </script>
+
+</body>
+</html>
