@@ -31,6 +31,7 @@
           <h1 id="td02">DTP/RETOUCH allproduct</h1>
           <h1 id="td03">DTP/newEPOCH</h1>
           <h1 id="td04">DTP/popup event</h1>
+          <h1 id="td05">DTP/TALLMAN</h1>
           <!-- REALevet -->
           <h1 id="tr01">REALevet/ANNASUI cafe</h1>
           <h1 id="tr02">REALevet/nihonbashi nishikawa</h1>
@@ -59,6 +60,7 @@
               <ul id="bd02"><img src="../pcimg/d02_kv.jpg" width="15" height="15"><p>RETOUCH allproduct</p></ul>
               <ul id="bd03"><img src="../pcimg/d03_kv.jpg" width="15" height="15"><p>newEPOCH</p></ul>
               <ul id="bd04"><img src="../pcimg/d04_kv.jpg" width="15" height="15"><p>popup event</p></ul>
+              <ul id="bd05"><img src="../pcimg/d05_kv.jpg" width="15" height="15"><p>TALLMAN</p></ul>
 
               <ul id="br01"><img src="../pcimg/r01_kv.jpg" width="15" height="15"><p>ANNASUI cafe</p></ul>
               <ul id="br02"><img src="../pcimg/r02_kv.jpg" width="15" height="15"><p>nihonbashi nishikawa</p></ul>
@@ -100,6 +102,9 @@
                 <section id="d04">
                   <iframe src="d04.html" frameBorder="0" width="100%" height="600"></iframe>
                 </section>
+                <section id="d05">
+                  <iframe src="d05.html" frameBorder="0" width="100%" height="600"></iframe>
+                </section>
 
                 <!-- REALevent -->
                 <section id="r01">
@@ -126,120 +131,124 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!-- webdesign -->
+   <!-- webdesign -->
   <script>
     // 非表示
-    $('#bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #w01 , #w02 , #w03 , #w04 , #w05 , #bd01 , #bd02 , #bd03 , #bd04 , #d01 , #d02 , #d03 , #d04 ,#br01 , #br02 , #br03 , #br04 , #br05 , #r01 , #r02 , #r03 , #r04 , #r05 , #title01 , #title02 , #title03 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #w01 , #w02 , #w03 , #w04 , #w05 , #bd01 , #bd02 , #bd03 , #bd04 , #bd05 , #d01 , #d02 , #d03 , #d04 , #d05 , #br01 , #br02 , #br03 , #br04 , #br05 , #r01 , #r02 , #r03 , #r04 , #r05 , #title01 , #title02 , #title03 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     $(this).css('color','black');
 
     $("#button1").click(function() {
       $("#bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #title01").show();
-      $('#w01 , #w02 , #w03 , #w04 , #w05 , #bd01 , #bd02 , #bd03 , #bd04 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 , #br01 , #br02 , #br03 , #br04 , #br05 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 ,  #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 , #title02 , #title03 , #title00 ').hide();
+      $('#w01 , #w02 , #w03 , #w04 , #w05 , #bd01 , #bd02 , #bd03 , #bd04 , #bd05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 , #br01 , #br02 , #br03 , #br04 , #br05 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 ,  #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 , #title02 , #title03 , #title00 ').hide();
     });
+    
     // コンテンツ01
     $("#bw01").click(function() {
     $("#w01, #tw01").show();
-    $('#w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ02
     $("#bw02").click(function() {
     $("#w02 , #tw02").show();
-    $('#w01 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00,  #tw01 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00,  #tw01 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ03
     $("#bw03").click(function() {
     $("#w03 , #tw03").show();
-    $('#w01 , #w02 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ04
     $("#bw04").click(function() {
     $("#w04 , #tw04").show();
-    $('#w01 , #w02 , #w03 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw05 , #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ05
     $("#bw05").click(function() {
     $("#w05 , #tw05").show();
-    $('#w01 , #w02 , #w03 , #w04 , #d01 , #d02 , #d03 , #d04, #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 ,  #tw01 , #tw02 , #tw03 , #tw04 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #d01 , #d02 , #d03 , #d04, #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 ,  #tw01 , #tw02 , #tw03 , #tw04 , #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
   </script>
 
 <!-- DPT -->
   <script>
-    // $('#bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #w01 , #w02 , #w03 , #w04 , #w05 , #bd01 , #bd02 , #bd03 , #bd04 , #d01 , #d02 , #d03 , #d04 , #br01 , #br02 , #br03 , #br04 , #br05 , #r01 , #r02 , #r03 , #r04 , #r05 , #title01 , #title02 , #title03 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #tr01 , #tr02 , #tr03 , #tr04 , #tr04 , #tr05 ').hide();
     $("#button2").click(function() {
-      $("#bd01 , #bd02 , #bd03 , #bd04 , #title02").show();
-      $('#w01 , #w02 , #w03 , #w04 , #w05 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 , #br01 , #br02 , #br03 , #br04 , #br05 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 ,  #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 , #title01 , #title03 ,#title00').hide();
+      $("#bd01 , #bd02 , #bd03 , #bd04 , #bd05 , #title02").show();
+      $('#w01 , #w02 , #w03 , #w04 , #w05 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 , #br01 , #br02 , #br03 , #br04 , #br05 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 ,  #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 , #title01 , #title03 ,#title00').hide();
     });
     // コンテンツ01
     $("#bd01").click(function() {
     $("#d01 , #td01").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ02
     $("#bd02").click(function() {
     $("#d02 ,#td02").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ03
     $("#bd03").click(function() {
     $("#d03 ,#td03").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d04 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ04
     $("#bd04").click(function() {
     $("#d04 ,#td04").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d05 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    });
+    // コンテンツ05
+    $("#bd05").click(function() {
+    $("#d05 ,#td05").show();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
   </script>
 
   <!-- REAL -->
   <script>
-    // $('#bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #w01 , #w02 , #w03 , #w04 , #w05 , #bd01 , #bd02 , #bd03 , #bd04 , #d01 , #d02 , #d03 , #d04 , #br01 , #br02 , #br03 , #br04 , #br05 , #r01 , #r02 , #r03 , #r04 , #r05 , #title01 , #title02 , #title03 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     $("#button3").click(function() {
       $("#br01 , #br02 , #br03 , #br04 , #br05 ,#title03").show();
-      $('#w01 , #w02 , #w03 , #w04 , #w05 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #d01 , #d02 , #d03 , #d04 , #bd01 , #bd02 , #bd03 , #bd04 , #r01 , #r02 , #r03 , #r04 , #r05 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 ,  #td01 , #td02 , #td03 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 , #title01 , #title02 , #title00').hide();
+      $('#w01 , #w02 , #w03 , #w04 , #w05 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #d01 , #d02 , #d03 , #d04 , #d05 , #bd01 , #bd02 , #bd03 , #bd04 , #bd05 , #r01 , #r02 , #r03 , #r04 , #r05 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 ,  #td01 , #td02 , #td03 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 , #tr05 , #title01 , #title02 , #title00').hide();
     });
     // コンテンツ01
     $("#br01").click(function() {
     $("#r01 ,#tr01").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03  , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r02 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03  , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #td05 , #tr02 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ02
     $("#br02").click(function() {
     $("#r02 ,#tr02").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #tr01 , #tr03 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r03 , #r04 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #td05 , #tr01 , #tr03 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ03
     $("#br03").click(function() {
     $("#r03 ,#tr03").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r04 , #r05 ,#title01 , #title02 , #title03 , title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #tr01 , #tr02 , #tr04 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r04 , #r05 ,#title01 , #title02 , #title03 , title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #td05 , #tr01 , #tr02 , #tr04 , #tr05 ').hide();
     });
     // コンテンツ04
     $("#br04").click(function() {
     $("#r04 ,#tr04").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #tr01 , #tr02 , #tr03 , #tr05 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #d05 , #r01 , #r02 , #r03 , #r05 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr05 ').hide();
     });
     // コンテンツ05
     $("#br05").click(function() {
     $("#r05 , #tr05").show();
-    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #tr01 , #tr02 , #tr03 , #tr04 ').hide();
+    $('#w01 , #w02 , #w03 , #w04 , #w05 , #d01 , #d02 , #d03 , #d04 , #r01 , #r02 , #r03 , #r04 ,#title01 , #title02 , #title03 , #title00 , #tw01 , #tw02 , #tw03 , #tw04 , #tw05 , #td01 , #td03, #td02 , #td04 , #td05 , #tr01 , #tr02 , #tr03 , #tr04 ').hide();
     });
   </script>
 
   <!-- ボタン装飾 -->
   <script>
    $("#button1").click(function() {
-      $("#button2 , #button3 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #bd01 , #bd02 ,#bd03 , #bd04 , #br01 , #br02 , #br03 , #br04 , #br05 ").removeClass('active');
+      $("#button2 , #button3 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #bd01 , #bd02 ,#bd03 , #bd04 , #bd05 , #br01 , #br02 , #br03 , #br04 , #br05 ").removeClass('active');
       $("#button1 , #button2 , #button3").removeClass('active02');
       $(this).addClass('active');
     });
     $("#button2").click(function() {
-      $("#button1 , #button3 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #bd01 , #bd02 ,#bd03 , #bd04 , #br01 , #br02 , #br03 , #br04 , #br05 ").removeClass('active');
+      $("#button1 , #button3 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #bd01 , #bd02 ,#bd03 , #bd04 , #bd05 , #br01 , #br02 , #br03 , #br04 , #br05 ").removeClass('active');
       $("#button1 , #button2 , #button3").removeClass('active02');
       $(this).addClass('active');
     });
     $("#button3").click(function() {
-      $("#button1 , #button2 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #bd01 , #bd02 ,#bd03 , #bd04 , #br01 , #br02 , #br03 , #br04 , #br05 ").removeClass('active');
+      $("#button1 , #button2 , #bw01 , #bw02 , #bw03 , #bw04 , #bw05 , #bd01 , #bd02 ,#bd03 , #bd04 , #bd05 , #br01 , #br02 , #br03 , #br04 , #br05 ").removeClass('active');
       $("#button1 , #button2 , #button3").removeClass('active02');
       $(this).addClass('active');
     });
@@ -289,6 +298,11 @@
     });
     $("#bd04").click(function() {
       $("#bd01 , #bd02 , #bd03 , #bd05").removeClass('active');
+      $(this).addClass('active');
+      $('#button2').addClass('active02');
+    });
+    $("#bd05").click(function() {
+      $("#bd01 , #bd02 , #bd03 , #bd04").removeClass('active');
       $(this).addClass('active');
       $('#button2').addClass('active02');
     });
