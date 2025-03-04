@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA DTP</title>
+  <link rel="stylesheet" href="d06.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <header id="header">
+    <div class="scrolldown1"><span>SCROLL</span></div>
+  </header>
+  <!-- <img src="img/d04_kv.jpg" alt="KV画像" width="100%"> -->
+  <section class="container">
+  <section class="wrapper">
+    <h1>tu-hacci CATALOG</h1>
+    <h2>#design#graphic</h2>
+    <p class="fadein">下着メーカーのカタログを半年間担当。内装と同じコンセプトで毎度イメージを少しづつ変更して作成し、ブランドイメージを守りながら作成。リアルイベントでカタログがすぐなるほど好評を得て、売上に貢献。
+    </p>
+    <div class="url fadein">
+      <div class="url_title"><h2>-DTP</h2></div>
+      <div class="url_link">-</div>
+    </div>
+    <section class="content">
+      <section class="content_wrapper">
+        <div class="content01 fadein">
+          <img src="../pcimg/d06_content01.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content02 fadein">
+          <img src="../pcimg/d06_content02.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content03 fadein">
+          <img src="../pcimg/d06_content03.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content04.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content05.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content06.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content07.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content08.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content09.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content10.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content11.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content12.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content13.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content14.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content15.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content16.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content17.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+        <div class="content04 fadein">
+          <img src="../pcimg/d06_content18.jpg" alt="プロジェクト画像" width="100%">
+        </div>
+      </section>
+    </section>
+  </section>
+  </section>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $(window).scroll(function (){
+      $('.fadein').each(function(){
+        var elementTop = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elementTop - windowHeight + 100){
+          $(this).addClass('scrollin');
+        }
+      });
+    });
+  });
+  </script>
+
+</body>
+</html>
