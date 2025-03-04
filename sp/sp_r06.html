@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y.KOYANAGAWA REALevent</title>
+  <link rel="stylesheet" href="sp_r06.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <a href="real.html" alt="REALeventの一覧ページに戻ります">
+  <section class="top">
+    <section class="back">
+      <img src="../spimg/back_button.png" width="70" alt="戻るボタン">
+    </section>
+    <section class="icon">
+      <img src="../spimg/r05_kv.jpg" width="50" height="50" style="border-radius: 50%;">
+      <h1>tu-hacci POPUP SHOP ikebukuro PARCO</h1>
+    </section>
+  </section>
+</a>
+
+<header id="header">
+  <header id="header">
+  <div class="scrolldown1"><span>SCROLL</span></div>
+</header>
+  
+<section class="container">
+  <section class="content">
+    <section class="project">
+      <h2 class="fadein">#direction#design#planning</h2>
+      <p class="fadein">下着メーカーのPOPUP SHOPをメインで担当。店内POP、配布LOOKBOOK、内装のメインビジュアル、内装ディレクションを担当。</p>
+      <div class="url fadein">
+        <div class="url_title"><h2>-REALevent</h2></div>
+        <div class="url_link">-</div>
+      </div>
+      <div class="content01 fadein">
+        <img src="../spimg/r06_content01.jpg" width="100%">
+      </div>
+      <div class="content02 fadein">
+        <img src="../spimg/r06_content02.jpg" width="100%">
+      </div>
+      <div class="content03 fadein">
+        <img src="../spimg/r06_content03.jpg" width="100%">
+      </div>
+    </section>
+  </section>
+</section>
+  
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+  $(window).scroll(function (){
+    $('.fadein').each(function(){
+      var elementTop = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elementTop - windowHeight + 100){
+        $(this).addClass('scrollin');
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
