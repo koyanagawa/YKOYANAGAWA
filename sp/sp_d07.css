@@ -155,7 +155,7 @@ position: absolute;
 left:-5px;
 top: -50px;
   /*テキストの形状*/
-color: #ffffff;
+color: #808080;
 font-size: 0.7rem;
 letter-spacing: 0.2em;
 font-size: 9px;
@@ -172,7 +172,7 @@ top: 0;
   /*線の形状*/
 width: 1px;
 height: 40px;
-background: #ffffff;
+background: #808080;
   /*線の動き1.4秒かけて動く。永遠にループ*/
 animation: pathmove 1.4s ease-in-out infinite;
 opacity:0;
