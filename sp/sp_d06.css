@@ -90,6 +90,9 @@ p{
   font-weight: bold;
   margin-left: auto;
   color: #808080;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 3px;
 }
 
 .url_link a{
